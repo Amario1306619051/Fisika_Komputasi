@@ -1,10 +1,15 @@
-def f(x):
-    return x*x + 2*x
+from distutils.log import debug
 
-deltaX = 0.001
+
+def fungsiBray(x):
+    return 5*x*x
+
+deltaX = 0.00000001
 point = 3
 
-F = (f(point + deltaX) - f(point))/deltaX
+F = (fungsiBray(point + deltaX) - fungsiBray(3))/deltaX
 print('Hasil turunan pada titik {point} adalah', F)
 
-print('{0:^20} | {1:^20}'.format('aku', 'muhlis'))
+
+
+#print('{0:^20} | {1:^20}'.format('aku', 'muhlis'))
